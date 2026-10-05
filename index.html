@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manya Poojary | BCA Student & Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Manya Poojary, BCA student seeking software development and cybersecurity internships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">Manya Poojary</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="greeting">Hello, I'm</p>
+          <h1>Manya Poojary</h1>
+          <p class="title">BCA Student | Aspiring Software Developer</p>
+          <p class="intro">I'm a 5th-semester BCA student who enjoys building things with code and learning how to keep them secure. I'm looking for an internship in software development or cybersecurity where I can learn from a team and contribute.</p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="assets/profile.jpg" alt="Profile photo of Manya Poojary" width="320" height="320">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <h2>About Me</h2>
+        <p>I am pursuing a <strong>Bachelor of Computer Applications (BCA)</strong> and am currently in my fifth semester. I enjoy solving problems with code, and I'm especially interested in how software can be made safer, which is why I'm studying cybersecurity alongside web development and Python.</p>
+        <p>I learn best by building, so I'm working on small projects to apply what I study. I'm a quick learner, I like working with others, and I'm ready to take on an internship to gain real-world experience.</p>
+        <dl class="edu">
+          <div><dt>Degree</dt><dd>Bachelor of Computer Applications (BCA)</dd></div>
+          <div><dt>College</dt><dd>Dr. B.B. Hegde First Grade College, Kundapura</dd></div>
+          <div><dt>University</dt><dd>Mangalore University</dd></div>
+          <div><dt>Graduation</dt><dd>2027</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Technical</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Cybersecurity Fundamentals</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Professional</h3>
+            <ul class="tags">
+              <li>Communication</li>
+              <li>Time Management</li>
+              <li>Quick Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card project">
+            <span class="status status-dev">Currently Developing</span>
+            <h3>Phishing Website Detection System</h3>
+            <p>A Python-based tool that aims to identify suspicious URLs and phishing websites. This project is still in progress and not yet complete.</p>
+            <ul class="tags small"><li>Python</li><li>Cybersecurity</li></ul>
+          </article>
+          <article class="card project">
+            <span class="status status-done">Completed</span>
+            <h3>Personal Portfolio Website</h3>
+            <p>This responsive portfolio, built with HTML, CSS and JavaScript, including a mobile menu and a validated contact form.</p>
+            <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+          <article class="card project placeholder">
+            <span class="status status-plan">Coming Soon</span>
+            <h3>More projects on the way</h3>
+            <p>I'm continuing to build and learn. New projects will be added here as I finish them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="certificates">
+      <div class="container">
+        <h2>Certificates</h2>
+        <ul class="cert-grid">
+          <li class="card cert">NPTEL Swayam</li>
+          <li class="card cert">AWS Academy Cloud Foundation</li>
+          <li class="card cert">IBM SkillBuild AI Fundamentals</li>
+          <li class="card cert">MSDC Manipal Cybersecurity</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p class="lead">Have an internship opportunity or a question? Send me a message.</p>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="nameError">
+            <p class="error" id="nameError" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="emailError">
+            <p class="error" id="emailError" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" aria-describedby="messageError"></textarea>
+            <p class="error" id="messageError" role="alert"></p>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Manya Poojary</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/manya-poojary-7ab898382" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/poojarym738-may" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p class="copy">&copy; <span id="year">2026</span> Manya Poojary. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
